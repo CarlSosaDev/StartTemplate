@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# StartTemplate
+Rails basic template with Login,registration,sign  out and bootstrap.
+>>>>>>> b960c86977c72ade8c55b421733a46aa6df93eb7
