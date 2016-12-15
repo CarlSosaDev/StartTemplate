@@ -1,0 +1,32 @@
+<nav class="navbar navbar-inverse">
+  <div   class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">CarlosSosa</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><%= link_to 'Facebook','https://www.facebook.com' %></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to('Signup', new_user_registration_path) %></li>
+      <% if user_signed_in? %>
+      <li><%= link_to('Sign out', destroy_user_session_path, :method => :delete) %></li>
+          <% else %>
+      <li><%= link_to('Login', new_user_session_path)%></li>
+
+
+    </ul>
+          <% end %>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Rails Template</h1>
+    <p>Register,Login,Sign out.</p>
+  </div>
+  <p>This is some text.</p>
+  <p>This is another text.</p>
+</div>
